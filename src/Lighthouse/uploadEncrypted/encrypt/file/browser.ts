@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 import axios from 'axios'
 import FormData from 'form-data'
-import { generate, saveShards } from '@lighthouse-web3/kavach'
+import { generate, saveShards } from 'lighthouse-encryption-sdk-browser'
 import {
   IFileUploadedResponse,
   IUploadProgressCallback,
@@ -72,7 +72,7 @@ export default async (
         }
       })
     )
-    filesParam.forEach(function (item_) {
+    filesParam.forEach(function(item_) {
       return formData.append(
         'file',
         item_.data,
@@ -88,8 +88,8 @@ export default async (
         Encryption: `${true}`,
         Authorization: token,
       },
-      onUploadProgress: function (progressEvent) {
-        if(progressEvent.total) {
+      onUploadProgress: function(progressEvent) {
+        if (progressEvent.total) {
           const _progress = Math.round(progressEvent.loaded / progressEvent.total)
           uploadProgressCallback({
             progress: _progress,

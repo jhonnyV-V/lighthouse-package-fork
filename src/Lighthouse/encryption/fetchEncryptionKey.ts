@@ -1,4 +1,4 @@
-import { recoverKey, recoverShards } from '@lighthouse-web3/kavach'
+import { recoverKey, recoverShards } from 'lighthouse-encryption-sdk-browser'
 
 export type fetchEncryptionKeyResponse = {
   data: {

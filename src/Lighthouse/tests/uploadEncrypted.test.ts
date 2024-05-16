@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import { ethers } from 'ethers'
 import lighthouse from '..'
-import { getJWT } from '@lighthouse-web3/kavach'
+import { getJWT } from 'lighthouse-encryption-sdk-browser'
 import 'dotenv/config'
 
 export const signAuthMessage = async (privateKey: string) => {

@@ -2,7 +2,7 @@
 import axios from 'axios'
 import FormData from 'form-data'
 import { encryptFile } from '../../encryptionNode'
-import { generate, saveShards } from '@lighthouse-web3/kavach'
+import { generate, saveShards } from 'lighthouse-encryption-sdk-browser'
 import { lighthouseConfig } from '../../../../lighthouse.config'
 
 export default async (
@@ -26,7 +26,7 @@ export default async (
       fileEncryptionKey
     )
 
-    formDdata.append('file', Buffer.from(encryptedData), {filename: name})
+    formDdata.append('file', Buffer.from(encryptedData), { filename: name })
 
     const response = await axios.post(endpoint, formDdata, {
       withCredentials: true,

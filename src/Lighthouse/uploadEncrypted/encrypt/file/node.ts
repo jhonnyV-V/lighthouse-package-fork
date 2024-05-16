@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { lighthouseConfig } from '../../../../lighthouse.config'
-import { generate, saveShards } from '@lighthouse-web3/kavach'
+import { generate, saveShards } from 'lighthouse-encryption-sdk-browser'
 import { encryptFile } from '../../encryptionNode'
 import { walk } from '../../../upload/files/node'
 import { IFileUploadedResponse } from '../../../../types'

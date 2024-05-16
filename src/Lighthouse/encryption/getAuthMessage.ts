@@ -1,5 +1,5 @@
 import { addressValidator } from '../utils/util'
-import { getAuthMessage } from '@lighthouse-web3/kavach'
+import { getAuthMessage } from 'lighthouse-encryption-sdk-browser'
 
 export type authMessageResponse = {
   data: {

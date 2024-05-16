@@ -1,5 +1,5 @@
-import { accessControl } from '@lighthouse-web3/kavach'
-import { ChainType } from '@lighthouse-web3/kavach/dist/types'
+import { accessControl } from 'lighthouse-encryption-sdk-browser'
+import { ChainType } from 'lighthouse-encryption-sdk-browser/dist/types'
 
 export type accessControlResponse = {
   data: {

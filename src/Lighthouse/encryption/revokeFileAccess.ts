@@ -1,4 +1,4 @@
-import { revokeAccess } from '@lighthouse-web3/kavach'
+import { revokeAccess } from 'lighthouse-encryption-sdk-browser'
 
 export type revokeResponse = {
   data: {

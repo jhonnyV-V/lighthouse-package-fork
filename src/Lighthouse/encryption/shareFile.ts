@@ -1,4 +1,4 @@
-import { shareToAddress } from '@lighthouse-web3/kavach'
+import { shareToAddress } from 'lighthouse-encryption-sdk-browser'
 
 export type shareResponse = {
   data: {
